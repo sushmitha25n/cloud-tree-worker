@@ -3,7 +3,7 @@
 This repository contains the code for the CloudTree project, which is composed of several components, including a Python Flask server hosted on a Google instance, Cloudflare serverless workers, and private R2 bucket interaction. The project provides endpoints for various functionalities.
 
 ## Directory Structure
-
+```
 hello-world/
 ├── <files and code for the hello-world worker>
 image-worker/
@@ -11,7 +11,7 @@ image-worker/
 server/
 ├── cloud_tree/
 ├── <files and code for the Python Flask server>
-
+```
 
 - `hello-world`: Contains the Cloudflare serverless worker that returns user login details.
 - `image-worker`: Contains the Cloudflare serverless worker that interacts with a private R2 bucket and returns image data to the Flask server.
