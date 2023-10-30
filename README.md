@@ -31,9 +31,9 @@ server/
 
 To run the CloudTree project, follow the instructions in each component's respective directory. Be sure to configure the necessary API keys, environment variables, and dependencies.
 
-- For the Flask server, navigate to `server/cloud_tree` and follow the server's README for setup instructions.
+- For the Flask server, navigate to `server/cloud_tree` and run the server - server.py.
 
-- For the Cloudflare workers, navigate to the respective worker directories (`hello-world` and `image-worker`) and follow their README files for setup and deployment instructions.
+- For the Cloudflare workers, navigate to the respective worker directories (`hello-world` and `image-worker`) and follow the cloudflare wrangler cli documents for setup and deployment instructions.
 
 Please ensure that you have the required permissions and credentials to interact with the specified R2 bucket.
 
@@ -43,5 +43,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-I acknowledge the contributions of the open-source community and thank the project's collaborators for their dedication and support.
-
+I acknowledge the contributions of the open-source community.
