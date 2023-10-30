@@ -21,7 +21,7 @@ server/
 
 1. [https://cloudtree.online](https://cloudtree.online): The main entry point for the CloudTree project.
 
-2. [https://tunnel.cloudtree.online](https://tunnel.cloudtree.online): An endpoint for additional functionality.
+2. [https://tunnel.cloudtree.online](https://tunnel.cloudtree.online): An endpoint for showing tunnel functionality from cloudflare.
 
 3. [https://tunnel.cloudtree.online/secure](https://tunnel.cloudtree.online/secure): A secure endpoint for specific operations.
 
