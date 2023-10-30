@@ -1,9 +1,7 @@
 import jwt  # Import the jwt module
 from datetime import datetime
 from flask import Flask, request, jsonify, render_template_string, render_template
-import json
 import requests
-# import base64
 
 app = Flask(__name__)
 
@@ -35,18 +33,18 @@ def hello_world():
 def secure_country(country):
     # You can use the 'country' parameter to fetch data or perform any other logic
     # For example, you can retrieve data from a database, generate an image, etc.
-    
-    # Here, we're returning a simple response with the country name
-    # return f"Welcome to the secure API for {country}!"
-            # Make an HTTP POST request to the Cloudflare Worker
+    country_image = get_country_image(country)
+    if country_image is not None:
+        return render_template('country_image.html', image_data=country_image)
+    else:
+        return "Image not found", 404
+
+def get_country_image(country):
+
     worker_url = "https://image-worker.sushmitha25n.workers.dev"
     image_url = f'{worker_url}/{country}.png'
     response = requests.get(image_url)
-    print(response)
-    if response is not None:
-        return render_template('country_image.html', image_data=response)
-    else:
-        return "Image not found", 404
+    return response.content
 
 
 @app.route('/secure')
@@ -98,4 +96,4 @@ def secure_route():
 
 if __name__ == '__main__':
     # Run the Flask app locally on port 8080
-    app.run(host="0.0.0.0", port=8082)
+    app.run(host="0.0.0.0", port=8080)
