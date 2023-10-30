@@ -37,10 +37,6 @@ To run the CloudTree project, follow the instructions in each component's respec
 
 Please ensure that you have the required permissions and credentials to interact with the specified R2 bucket.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 I acknowledge the contributions of the open-source community.
